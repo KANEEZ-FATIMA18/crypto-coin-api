@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <div>
-    Hello,  plz visit coin.market page
+    Hello,  Plzz visit coin.market page
 
     </div>
   )}
