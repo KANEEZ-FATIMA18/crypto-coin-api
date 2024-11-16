@@ -4,8 +4,22 @@ import { useState, useEffect } from "react";
 export default function Coinmarket() {
   const API_KEY = "ba51e570f3911d11895d2bdeae2df1fd";
 
+  interface CoinRates {
+    BTC?: number;
+    ETH?: number;
+    LTC?: number;
+    BCH?: number;
+    XMR?: number;
+    EOS?: number;
+    XRP?: number;
+  }
+  
+  interface CoinData {
+    rates: CoinRates;
+  }
+
   // use state
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<CoinData | null>(null);
 
   // use effect
   useEffect(() => {
